@@ -1,7 +1,8 @@
 body {
   background-color: black !important;
   color: white !important;
-  
+  overflow-x: hidden;
+  width: 100%;
   font-family: 'Playfair Display', serif !important;
 }
 
