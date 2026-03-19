@@ -1,0 +1,323 @@
+body {
+  background-color: black !important;
+  color: white !important;
+
+  font-family: 'Playfair Display', serif !important;
+}
+
+p {
+  text-align: justify;
+}
+
+.section-top {
+  margin-top: 100px;
+}
+
+.section-bottom {
+  margin-bottom: 100px;
+}
+
+.text-hr-center::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #666;
+  margin-right: 15px;
+}
+.paragraph-text-color{
+  color: rgba(255, 255, 255, 0.755);
+}
+
+.scroll-animation-delay-1{
+  animation-delay: 0.1s !important;
+}
+
+.scroll-animation-delay-2{
+  animation-delay: 0.2s !important;
+}
+
+.scroll-animation-delay-3{
+  animation-delay: 0.3s !important;
+}
+
+.scroll-animation-delay-4{
+  animation-delay: 0.4s !important;
+}
+
+.scroll-animation-delay-5{
+  animation-delay: 0.5s !important;
+}
+/*------------------------------------------------
+           scroll animation start
+------------------------------------------------*/
+.scroll-animation {
+  opacity: 0;
+}
+
+@keyframes scrollA {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.active {
+  animation: scrollA 1s ease-out forwards; 
+}
+/*------------------------------------------------
+           scroll animation end
+------------------------------------------------*/
+/*------------------------------------------------
+           Navigation Bar
+------------------------------------------------*/
+#navbar {
+  /* nav bar */
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#main-logo{
+  animation-delay: -0.5s;
+}
+
+#navbarSupportedContent{
+  animation-delay: -0.5s;
+}
+
+#navbutton {
+  background-color: rgb(84, 84, 84);
+  border-radius: 15px;
+}
+
+#navhome {
+  transition: 0.3s;
+}
+
+#navlink {
+  transition: 0.3s;
+}
+
+#navabout {
+  transition: 0.3s;
+}
+
+#navalbums {
+  transition: 0.3s;
+}
+
+#navdisabled {
+  transition: 0.3s;
+}
+
+#navbutton {
+  transition: 0.3s;
+}
+
+/*------------------------------------------------
+           hero section
+------------------------------------------------*/
+#hero-section {
+  background-image: url(../images/herowallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: -69px;
+}
+
+.mini-hr {
+  width: 80px;
+  height: 4px;
+  opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 0.485);
+  border-radius: 2px;
+}
+
+#herobutton1 {
+  font-size: 13px;
+  width: 135px;
+  height: 35px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#herobutton2 {
+  font-size: 13px;
+  width: 135px;
+  height: 35px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#heroparagrph {
+  color: rgb(232, 232, 232);
+  font-size: 14px;
+}
+
+#social-media-link {
+  transition: 0.3s;
+}
+
+/*------------------------------------------------
+             me section
+------------------------------------------------*/
+#section-title {
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #a1a1a1;
+  font-size: 14px;
+}
+
+#section-title::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background-color: #666;
+    margin-right: 15px;
+  }
+
+.hr-line {
+  height: 4px;
+  opacity: 1 !important;
+  color: rgba(225, 225, 225, 0.692);
+  border-radius: 2px;
+}
+
+#photo-collection {
+  height: 525px;
+  overflow: hidden;
+}
+
+#second-photo-1 {
+  position: relative;
+  width: 375px;
+  height: 350px;
+  left: -50px;
+  top: 20px;
+  filter: contrast(90%);
+  z-index: 1;
+}
+
+#second-photo-2 {
+  position: relative;
+  width: 350px;
+  left: 50px;
+  top: -100px;
+  filter: contrast(80%);
+  z-index: 2;
+}
+
+#second-photo-3 {
+  position: relative;
+  width: 325px;
+  left: -125px;
+  top: -240px;
+  z-index: 3;
+  filter: contrast(70%);
+}
+
+#logo1{
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+#logo2{
+    opacity: 0.7;
+  transition: 0.3s;
+}
+
+#logo3{
+    opacity: 0.7;
+  transition: 0.3s;
+}
+
+#logo4{
+    opacity: 0.7;
+  transition: 0.3s;
+}
+
+#logo5{
+    opacity: 0.7;
+  transition: 0.3s;
+}
+/*------------------------------------------------
+                 photo albums
+------------------------------------------------*/
+#card {
+  background-color: rgba(54, 54, 54, 0.619);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#card-title {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#card-text {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#card-link {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  color: inherit;
+}
+
+.card-link-hover {
+  transition: 0.3s;
+}
+
+#card-image {
+  background-size: cover;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.card-image-hover {
+  transition: 0.3s;
+}
+
+/*------------------------------------------------
+                 website footer
+------------------------------------------------*/
+#footer {
+  background-color: rgba(54, 54, 54, 0.619);
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer-dark-color {
+  color: rgba(255, 255, 255, 0.694);
+}
+
+#footer-contact-link {
+  text-decoration: none;
+}
+
+#footer-link {
+  text-decoration: none;
+  color: azure;
+}
+
+#footer-image{
+  width: 300px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.accordion-button::after {
+    filter: invert(1); /* Arrow එක සුදු පැහැ ගැන්වීමට */
+}
